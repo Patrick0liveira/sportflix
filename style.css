@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red:#E50914;
+    --black:#141414;
+    --silver:#c0c0c0;
+    --gray:#939393;
+}
+
+body{
+    background:var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color:var(--silver);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color:var(--silver);
+    text-decoration: none;
+    margin: auto 15px auto 10px;
+}
+
+header a:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+header .logo{
+    cursor: pointer;
+    color: var(--red);
+    font-family: 'Arial Black', monospace;
+    font-size: 40px;
+    margin: auto 10px;
+}
+
+header .container {
+    margin: 12px 0;
+}
+
+/*-----------filme principal-----------------*/
+.main-film .container{
+    display: block;
+    margin-left: 20px;
+}
+.main-film{
+    display: flex;
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url('../img/last-dance-bg.png');
+    height: 720px;
+    background-size: cover;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-film .descricao{
+    margin: 10px auto 90px;
+}
+
+.titulo {
+    font-size: 42px;
+    font-family: monospace, sans-serif;
+}
+
+.descricao{
+    max-width: 450px;
+}
+
+.btn {
+    background: rgba(0,0,0,0.50);
+    cursor: pointer;
+    outline: none;
+    border:none;
+    padding: 15px 23px;
+    border-radius: 3px;
+    color: #fff;
+    margin: 5px 12px;
+    font-size: 12px;
+    width: 200px;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color:var(--black);
+    transition: 0.3s;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/*OWL CAROUSEL*/
+
+.box-filme {
+    width: 90% !important;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 18px;
+}
+
+.carrosel-filmes .item{
+    cursor: pointer;
+}
+
+.carrosel-filmes p {
+    font-size: 30px;
+    margin: 30px 12px 8px;
+}
+
+
+/*footer*/
+
+footer {
+    margin: 150px 250px 40px;
+    color: var(--silver);
+}
+
+footer p {
+    margin: 18px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--silver);
+}
+
+footer ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+footer li {
+    margin: 12px auto;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer li:hover, footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+    outline: none;
+    text-indent: 0;
+    padding: 10px 22px;
+    margin: 28px 0;
+    background: var(--black);
+    color: var(--silver);
+    border-radius: 3px;
+    width: 150px;
+}
+
+select::after{
+    content: "";
+    color:#fff;
+}
